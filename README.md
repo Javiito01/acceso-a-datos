@@ -1,7 +1,7 @@
 # 💫 About Me:
 I'm a second-year student of a Higher Degree in Cross-Platform Application Development (DAM). Passionate about programming, always learning, and looking to improve my skills to build useful and efficient applications.
 
-.<br><br>
+<br><br>
 
 
 # 💻 Tech Stack:
