@@ -7,7 +7,7 @@ public class HolaMundo {
         System.out.print("Introduce el primer número: ");
         int a = scanner.nextInt();
 
-        System.out.print("Introduce el segundo número: ");
+        System.out.print("Introduce el segundo numero: ");
         int b = scanner.nextInt();
 
         System.out.println("Elige la operación (+, -, *, /): ");
