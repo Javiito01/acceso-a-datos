@@ -21,11 +21,13 @@ public class Mapa {
     matriz[hormiguero.getY()][hormiguero.getX()] = HORMIGUERO;
   }
 
+  // Complejidad: O(1)
   public Posicion getHormiguero() {
     return hormiguero;
   }
 
   // límites de la matriz
+  // Complejidad: O(1)
   public boolean dentroLimites(Posicion posicion) {
     int x = posicion.getX();
     int y = posicion.getY();
@@ -45,16 +47,16 @@ public class Mapa {
 
   // preparacion del mapa
   public void prepararMapa(HashMap<String, Hormiga> hormigas) {
-    // vaciar la matriz
+    // vaciar la matriz 
     for (int y = 0; y < ALTO; y++) {
       for (int x = 0; x < ANCHO; x++) {
         matriz[y][x] = VACIO;
       }
     }
-    // recolocar el hormiguero
+    // recolocar el hormiguero O(1)
     matriz[hormiguero.getY()][hormiguero.getX()] = HORMIGUERO;
 
-    // dibujar hormigas 
+    // dibujar hormigas O(m)
     for (Hormiga h : hormigas.values()) {
       Posicion p = h.getPosicion();
       if (dentroLimites(p)) {
