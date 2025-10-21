@@ -43,7 +43,7 @@ public abstract class Hormiga extends Thread { // O(1)
   public void run() {
     while (activa) {
       try {
-        Thread.sleep(1000); // O(1) computacional
+        Thread.sleep(1000); // O(1)
       } catch (InterruptedException e) {
         break;
       }
